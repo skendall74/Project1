@@ -120,22 +120,20 @@ h6 {
     width: 70%;
 }
 
+
+
 /*  ====== CONTACT US FORM ======  */
 .modal-title {
     width: 100%;
-
 }
+
+
 .contactUsForm {
     align-content: center;
 }
 .contactUsLightBox {
     visibility: inherit;
-    position: absolute;
-    top: 150px;
-    left: 325px;
-    display: none;
-    width: 60%;
-    height: 80%;
+    position: relative;
     padding: 80px;
     color: #000000;
     background-color: #F79090;
@@ -150,4 +148,8 @@ h6 {
 }
 form {
     margin: auto;
+}
+
+.modal-content {
+    background-color: none;
 }

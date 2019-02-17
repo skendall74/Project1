@@ -98,3 +98,7 @@ body {
   border: red;
   color: green;
 }
+
+.modal-content {
+    background-color: none;
+}

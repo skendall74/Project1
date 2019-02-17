@@ -1,41 +1,35 @@
-//retrieved from firebase (even though thats public too :/)
 var youtubeAPIKey;
-var geocodeAPIKey;
 var map2;
 
+//retrieved from firebase (even though thats public too :/)
+
 $(document).ready(function () {
+
+    
 
     $("#map").hide();
     // INITIALIZE FIREBASE
     var config = {
-        apiKey: "AIzaSyCtHL7f2YUS9l46Rdo3ilu9v8VJLbMOMPo",
-        authDomain: "projectonelightbox.firebaseapp.com",
-        databaseURL: "https://projectonelightbox.firebaseio.com",
-        projectId: "projectonelightbox",
-        storageBucket: "",
-        messagingSenderId: "369764684225"
+        apiKey: "AIzaSyDuaMmNoZbpQF7RhEcU3FHNAYnaNxFroBk",
+        authDomain: "ketchup-apikey.firebaseapp.com",
+        databaseURL: "https://ketchup-apikey.firebaseio.com",
+        projectId: "ketchup-apikey",
+        storageBucket: "ketchup-apikey.appspot.com",
+        messagingSenderId: "1010613696016"
     };
     firebase.initializeApp(config);
 
     var database = firebase.database();
 
     // INITIALIZE API Key FIREBASE
-    var config2 = {
-        apiKey: "AIzaSyAaOwHDCyONUt6l2TKF0FVr9pdjWCxFzuU",
-        authDomain: "ketchup-apikeys.firebaseapp.com",
-        databaseURL: "https://ketchup-apikeys.firebaseio.com",
-        projectId: "ketchup-apikeys",
-        storageBucket: "ketchup-apikeys.appspot.com",
-        messagingSenderId: "486669493180"
-    };
-    var apiKeyApp = firebase.initializeApp(config2, "apiKeys");
+
+    var apiKeyApp = firebase.initializeApp(config, "apiKey");
     var apiKeyDatabase = apiKeyApp.database();
 
     //get api key values from firebase
     apiKeyDatabase.ref().on("value", function (snapshot) {
         console.log(snapshot.val());
-        geocodeAPIKey = snapshot.val().geocodeAPIKey;
-        youtubeAPIKey = snapshot.val().youtubeAPIKey;
+        event.preventDefault();
 
         // If there is an error that Firebase runs into -- it will be stored in the "errorObject"
         // Again we could have named errorObject anything we wanted.
@@ -57,6 +51,8 @@ $(document).ready(function () {
             // alert("you clicked me");
             $(".display-3").fadeOut(2500);
             $(".paragraph").fadeOut(2500);
+            $(".display-3").hide();
+            $(".paragraph").hide();
 
             // GRABBING USERS INPUT IN FORM
             var submitName = $(".name").val().trim();
@@ -68,10 +64,10 @@ $(document).ready(function () {
                 submitEmail: submitEmail
             });
         });
-
     });
     // SEARCH FORM BUTTON - MAGNIFYING GLASS 
     $(document).on("click", "#search", search);
+
 });
 
 function getVideoSearchUrl(lat, long, keywords, radius) {
@@ -118,7 +114,7 @@ function search() {
     // This line will grab the text from the input box
     var keywords = $("#keywords").val().trim();
     var address = "atlanta";
-    var radius = "15mi";
+    var radius = 15;
 
 
     $.ajax({
@@ -134,7 +130,7 @@ function search() {
 
                 addressLat = geoResults[0].geometry.location.lat.toString();
                 addressLong = geoResults[0].geometry.location.lng.toString();
-                initMaps(addressLat, addressLong);
+                initMap(addressLat, addressLong);
 
                 //search for videos in the area of the given address
                 $.ajax({
