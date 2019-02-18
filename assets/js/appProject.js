@@ -1,11 +1,12 @@
 var youtubeAPIKey;
+var geocodeAPIKey;
 var map2;
 
 //retrieved from firebase (even though thats public too :/)
 
 $(document).ready(function () {
 
-    
+
 
     $("#map").hide();
     // INITIALIZE FIREBASE
@@ -188,13 +189,5 @@ function addMarker(videoLat, videoLong, videoTitle, id) {
         window.open(this.url);
     });
 }
-
-
-
-
-
-
-
-
 
 

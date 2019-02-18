@@ -19,7 +19,7 @@
   <!--======= CSS  =======-->
   <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
   <link rel="stylesheet" type="text/css" href="assets/css/styleProject.css">
- 
+
 
 </head>
 
@@ -45,45 +45,45 @@
     <div class="modal fade bd-example2-modal-lg" tabindex="2" role="dialog" aria-labelledby="myLargeModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-lg">
-          <!--  <input id="pac-input" class="controls" type="text" placeholder="Search Box">-->
-            <!-- ======= CONTACT US FORM ======= -->
-            <div class="contactUsLightBox">
-              <div class="contactUsForm">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Contact Us:</h5>
-                </div>
-                <form>
-                  <div class="form-group contactName">
-                    <label for="exampleFormControlInput1">Name:</label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
-                  </div>
-                  <div class="form-group contactEmail">
-                    <label for="exampleFormControlInput1">Email:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john.doe@yahoo.com">
-                  </div>
-                  <div class="form-group contactMessage">
-                    <label for="exampleFormControlTextarea1">Message:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-                  </div>
-                  <input type="submit" value="Submit" class="contactUsSubmitButton"><br>
-                </form>
-              </div>
+        <!--  <input id="pac-input" class="controls" type="text" placeholder="Search Box">-->
+        <!-- ======= CONTACT US FORM ======= -->
+        <div class="contactUsLightBox">
+          <div class="contactUsForm">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Contact Us:</h5>
             </div>
-      </div>
-    </div>
-      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!--  <input id="pac-input" class="controls" type="text" placeholder="Search Box">-->
-            <div id="mapCanvas"></div>
+            <form>
+              <div class="form-group contactName">
+                <label for="exampleFormControlInput1">Name:</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+              </div>
+              <div class="form-group contactEmail">
+                <label for="exampleFormControlInput1">Email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john.doe@yahoo.com">
+              </div>
+              <div class="form-group contactMessage">
+                <label for="exampleFormControlTextarea1">Message:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+              </div>
+              <input type="submit" value="Submit" class="contactUsSubmitButton"><br>
+            </form>
           </div>
         </div>
       </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!--  <input id="pac-input" class="controls" type="text" placeholder="Search Box">-->
+          <div id="mapCanvas"></div>
+        </div>
+      </div>
+    </div>
     <form class="form-inline">
       <input id="keywords" class="form-control mr-1" type="search" placeholder="Search for videos" aria-label="Search">
-      <button id="search" class="btn btn-outline-dark" type="submit"><img class="searchImage" src="assets/images/searchIcon.png"
-          alt="search icon"></button>
+      <button id="search" class="btn btn-outline-dark" type="submit"><img class="searchImage"
+          src="assets/images/searchIcon.png" alt="search icon"></button>
     </form>
   </nav>
 
@@ -94,19 +94,19 @@
         <div class="col-sm-10 offset-sm-1">
           <h1 class="display-3">Welcome to Ketchup</h1>
           <!--======= EMPTY DIV TO BE POPULATED BY THE GOOGLE API =======-->
+          <div id="map"></div>
           <div id="contentContainer"></div>
-          <div id="contentContainer"></div>
+          <!--======= EMPTY DIV TO BE POPULATED BY THE YOUTUBE VIDEO =======-->
         </div>
       </div>
     </div>
   </section>
-
   <!--======= WHO WE ARE CONTAINER =======-->
   <section id="whoWeAre">
     <div id="cover-caption">
       <div class="container">
         <div class="col-sm-10 offset-sm-1">
-          <h4 class="display-4"><strong>WHO WE ARE</strong><br>Four students attending 
+          <h4 class="display-4"><strong>WHO WE ARE</strong><br>Four students attending
             <br> a Georgia Tech Coding BootCamp</h4>
           <p class="paragraphOne">This is our first project</p>
           <div class="studentCard text-muted">
@@ -114,30 +114,37 @@
               <div class="row">
                 <div class="card">
                   <img src="assets/images/Mark.png" alt="Mark Hoefer">
-                  <p class="card-text">Experienced Software Engineer with a demonstrated history of working in the computer software industry. Strong
-                  engineering professional with a Bachelor of Science (BS) focused in Computer Science from University of Georgia -
-                  Franklin College of Arts and Sciences.</p>
+                  <p class="card-text">Experienced Software Engineer with a demonstrated history of working in the
+                    computer software industry. Strong
+                    engineering professional with a Bachelor of Science (BS) focused in Computer Science from University
+                    of Georgia -
+                    Franklin College of Arts and Sciences.</p>
                   <a href="https://github.com/skendall74" target="_blank">Portfolio</a>
                 </div>
                 <div class="card">
                   <img src="assets/images/DPLinkedinProPic.png" alt="Dhruv Patel">
-                  <p class="card-text">A University of Georgia: Terry College of Business Alumni and Georgia Institute of Technology Coding BootCamp future
-                  graduate with extensive experience in intricate Information Systems technology, software development, and strong
-                  business background.</p>
+                  <p class="card-text">A University of Georgia: Terry College of Business Alumni and Georgia Institute
+                    of Technology Coding BootCamp future
+                    graduate with extensive experience in intricate Information Systems technology, software
+                    development, and strong
+                    business background.</p>
                   <a href="https://github.com/darup67" target="_blank">Portfolio</a>
                 </div>
                 <div class="card">
                   <img src="assets/images/Shannon.jpeg" alt="Shannon Kendall">
-                  <p class="card-text">A Software Engineer and Full Stack Developer in Atlanta, Georgia. I am attending a Georgia Tech Boot Camp to further my
-                  career in web development. I have worked as a web designer, graphic designer, front end developer and UX designer over
-                  the last nine years.</p>
+                  <p class="card-text">A Software Engineer and Full Stack Developer in Atlanta, Georgia. I am attending
+                    a Georgia Tech Boot Camp to further my
+                    career in web development. I have worked as a web designer, graphic designer, front end developer
+                    and UX designer over
+                    the last nine years.</p>
                   <a href="https://github.com/skendall74" target="_blank">Portfolio</a>
                 </div>
                 <div class="card">
                   <img src="assets/images/sam.jpg" alt="Sam Terrazas">
-                  <p class="card-text">A driven, versatile full-stack web developer and design enthusiast with expertise in
-                  front end UI/UX development. 13+ years of professional experience crafting impactful
-                  content.  He has skills in Marketing, Digital and Social Media.</p>
+                  <p class="card-text">A driven, versatile full-stack web developer and design enthusiast with expertise
+                    in
+                    front end UI/UX development. 13+ years of professional experience crafting impactful
+                    content. He has skills in Marketing, Digital and Social Media.</p>
                   <a href="https://github.com/sammysosa23" target="_blank">Portfolio</a>
                 </div>
               </div>
@@ -149,7 +156,7 @@
   </section>
 
   <!--======= LIGHTBOX CONTAINING NAME - EMAIL FORM =======-->
-  
+
   <div class="lightbox">
     <h2>Sign up</h2>
     <p>Enter your name and email for our newsletter with additional information on trending YouTube videos in your
@@ -160,7 +167,6 @@
       <input type="submit" value="Submit" class="submitButton"><br>
     </form>
   </div>
-
   <!--======= FOOTER ========-->
   <footer id="footer-main">
     <div class="container">
@@ -187,7 +193,7 @@
         </div>
         <div class="col-sm-3">
           <h6>Mission Statement:</h6>
-          <p>To make sure we put out a viable, fun product.  Easily accessible for the masses.</p>
+          <p>To make sure we put out a viable, fun product. Easily accessible for the masses.</p>
         </div>
       </div>
     </div>
@@ -197,12 +203,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG_e26J2reLpshZj7mnvMe3j9rw9qwMqo&callback=initMap&libraries=places"
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG_e26J2reLpshZj7mnvMe3j9rw9qwMqo&callback=initMap&libraries=places"
     async defer></script>
- 
+
   <!--======= JQUERY FILE =======-->
   <script type="text/javascript" src="assets/js/appProject.js"></script>
-<script type="text/javascript" src="assets/js/modal.js"></script>
+  <script type="text/javascript" src="assets/js/modal.js"></script>
 </body>
 
 </html>
