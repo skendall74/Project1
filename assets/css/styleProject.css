@@ -1,6 +1,12 @@
 html, body {
-    height: 100%;
+    height: 95%;
+    width: 100%;
 }
+
+#map {
+    height: 80%;
+}
+
 #cover {
     background: #222;
     background-size: cover;
