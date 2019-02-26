@@ -133,18 +133,14 @@ h6 {
     width: 100%;
 }
 
-
 .contactUsForm {
     align-content: center;
 }
-.contactUsLightBox {
-    visibility: inherit;
-    position: relative;
+#contactUsLightBox {
     padding: 80px;
-    color: #000000;
-    background-color: #F79090;
+    color: #FFF;
+    background-color: rgb(52, 58, 64)!important;
     text-shadow: #333 0 1px 0;
-    opacity: .9;
     border-radius: 6%;
 }
 .contactName, .contactEmail, .contactMessage {
