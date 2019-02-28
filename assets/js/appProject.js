@@ -5,7 +5,6 @@ var map2;
 $(document).ready(function () {
 
 
-
     $("#map").hide();
     // INITIALIZE FIREBASE
     var config = {
@@ -52,7 +51,7 @@ $(document).ready(function () {
             $(".paragraph").fadeOut(2500);
             $(".display-3").hide();
             $(".paragraph").hide();
-            $("#map").show();
+    
             // GRABBING USERS INPUT IN FORM
             var submitName = $(".name").val().trim();
             var submitEmail = $(".email").val().trim();
@@ -159,6 +158,7 @@ function search() {
 
                                     $("#map").show();
                                 });
+                               
                         }
 
                     });
