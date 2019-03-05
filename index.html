@@ -20,14 +20,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/styleProject.css">
   <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
 
-  <!-- Import EmailJS -->
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_ix2c9dvrdsdZevSF2btCc");
-    })();
-  </script>
-
 </head>
 
 <body>
@@ -36,19 +28,17 @@
     <a class="navbar-brand" href=""><img class="logoImage" src="assets/images/ketchup2.png" alt="ketchup splatter"></a>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">HOME PAGE<span class="sr-only">(current)</span></a>
+        <button onclick="window.location.href = '#';" class="btn btn-primary btn-sm">Home</button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#whoWeAre">WHO ARE WE</a>
+          <button onclick="window.location.href = '#whoWeAre';" class="btn btn-primary btn-sm">Who We Are</button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contactUsLightBox">CONTACT US</a>
+        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg">Food & Drink</button>
       </li>
     </ul>
-    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg">Food
-      &
-      Drink</button>
   
+
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-lg">
@@ -144,29 +134,7 @@
     </form>
   </div>
 
-  <!-- ======= CONTACT US FORM ======= -->
-  <div id="contactUsLightBox">
-    <div class="contactUsForm">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Contact Us:</h5>
-      </div>
-      <form id='contact-form'>
-        <div class="form-group contactName">
-          <label for="exampleFormControlInput1">Name:</label>
-          <input type="name" class="form-control" id="icon_name" placeholder="name">
-        </div>
-        <div class="form-group contactEmail">
-          <label for="exampleFormControlInput1">Email:</label>
-          <input type="email" class="form-control" id="icon_email" placeholder="john.doe@yahoo.com">
-        </div>
-        <div class="form-group contactMessage">
-          <label for="exampleFormControlTextarea1">Message:</label>
-          <textarea class="form-control" id="message" rows="10"></textarea>
-        </div>
-        <input type="submit" value="submit" class="contactUsSubmitButton"><br>
-      </form>
-    </div>
-  </div>
+  
 
   <!--======= FOOTER ========-->
   <footer id="footer-main">
@@ -176,22 +144,22 @@
           <img class="logoImage" src="assets/images/ketchup2.png" alt="ketchup splatter">
           <p>uncopyright 2019</p>
         </div>
-              <div class="col-sm-3">
-                <ul class="list-unstyled">
-                  <li><a href="#">home page</a></li>
-                  <li><a href="#">trending</a></li>
-                  <li><a href="#">who are we</a></li>
-                  <li><a href="#">contact us</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-3">
-                <ul class="list-unstyled">
-                  <li><a href="#">facebook</a></li>
-                  <li><a href="#">twitter</a></li>
-                  <li><a href="#">youtube</a></li>
-                  <li><a href="#">linkedin</a></li>
-                </ul>
-              </div>
+        <div class="col-sm-3">
+          <ul class="list-unstyled">
+            <li><a href="#">home page</a></li>
+            <li><a href="#">trending</a></li>
+            <li><a href="#">who are we</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul class="list-unstyled">
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">youtube</a></li>
+            <li><a href="#">linkedin</a></li>
+          </ul>
+        </div>
         <div class="col-sm-3">
           <h6>Mission Statement:</h6>
           <p>To make sure we put out a viable, fun product. Easily accessible for the masses.</p>
@@ -212,7 +180,6 @@
 
   <script type="text/javascript" src="assets/js/modal.js"></script>
   <script type="text/javascript" src="assets/js/appProject.js"></script>
-  <script type="text/javascript" src="assets/js/mail.js"></script>
 </body>
 
 </html>
